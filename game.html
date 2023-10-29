@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="game.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container-sm quizCard d-flex justify-content-center allign-items-center bg-body rounded py-2">
+        <div class="data w-75">
+            <div class="quiz py-3">
+                <h1 class="head text-center py-3 fs-2 text-primary-emphasis border-bottom">Simple Quiz</h1>
+                <h2 id="question">Question goes here</h2>
+                <div id="answer-buttons">
+                    <button class="btn border border-black bg-white text-dark my-3 rounded">Answer 1</button>
+                    <button class="btn border border-black bg-white text-dark my-3 rounded">Answer 2</button>
+                    <button class="btn border border-black bg-white text-dark my-3 rounded">Answer 3</button>
+                    <button class="btn border border-black bg-white text-dark my-3 rounded">Answer 4</button>
+                </div>
+                <button class="next-btn text-white rounded">Next</button>
+                <a href="index.html" class="backhome border border-info text-white bg-success rounded py-2 fs-4 px-3">Go Home<i class="bi bi-house-heart-fill"></i></a>
+            </div>
+        </div>
+        <div class="result text-center w-25 bg-secondary-subtle py-3 my-4">
+            <h3 class="fs-2 py-1 text-primary-emphasis border-bottom border-black">Score Board</h3>
+            <h1 class="liveScore py-5">0</h1>
+        </div> 
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+</body>
+</html>
